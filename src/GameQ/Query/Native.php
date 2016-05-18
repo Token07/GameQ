@@ -61,7 +61,7 @@ class Native extends Core
         }
 
         // Send the packet
-        return fwrite($this->socket, $data);
+        return @fwrite($this->socket, $data);
     }
 
     /**
